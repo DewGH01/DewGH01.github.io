@@ -1,16 +1,112 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    transition: background-color 0.3s ease;
 }
+
 header {
-    background-color: #333;
+    background-color: #6a1b9a; /* Purple */
     color: white;
     padding: 20px;
     text-align: center;
 }
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* Navigation */
+nav ul {
+    background-color: #8e24aa; /* Darker Purple */
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff80ab; /* Pink */
+}
+
+/* Section Styles */
 section {
-    margin: 20px;
+    margin: 40px;
     padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #6a1b9a;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+a {
+    color: #8e24aa;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ff80ab;
+}
+
+/* Footer */
+footer {
+    background-color: #6a1b9a;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Dark Theme */
+body.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-theme header {
+    background-color: #333;
+}
+
+body.dark-theme nav ul {
+    background-color: #444;
+}
+
+body.dark-theme section {
+    background-color: #333;
+}
+
+body.dark-theme footer {
+    background-color: #333;
 }
